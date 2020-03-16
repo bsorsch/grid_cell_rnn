@@ -1,7 +1,6 @@
 import numpy as np
 import tensorflow as tf
 
-
 def generate_run_ID(options):
     ''' 
     Create a unique run ID from the most relevant

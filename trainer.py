@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 
 from visualize import save_ratemaps
-from tqdm import tqdm
+from tqdm import tqdm_notebook as tqdm
 
 
 class Trainer(object):

@@ -21,6 +21,10 @@ class PlaceCells(object):
         usy = tf.random.uniform((self.Np,), -self.box_height/2, self.box_height/2, dtype=tf.float64)
         self.us = tf.stack([usx, usy], axis=-1)
 
+        # # Grid place cell centers
+        # us = np.mgrid[:24,:24]/24 *self.box_width - self.box_width/2
+        # self.us = tf.transpose(tf.reshape(us, (2,-1)))
+
         
     def get_activation(self, pos):
         '''
